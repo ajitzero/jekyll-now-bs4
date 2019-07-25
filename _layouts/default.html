@@ -17,16 +17,16 @@
       {% include navigation.html %}
     </header>
 
-    <div role="main" class="container">
+    <div role="main" class="container py-5">
       {{ content }}
     </div>
 
     <footer class="bg-light text-dark p-5">
-        <div class="container-fluid">
-          <h3 class="site-name">{{ site.name }}</h3>
-          <p class="site-description">{{ site.description }}</p>
-          {% include svg-icons.html %}
-        </div>
+      <div class="container-fluid">
+        <h3 class="site-name">{{ site.name }}</h3>
+        <p class="site-description">{{ site.description }}</p>
+        {% include svg-icons.html %}
+      </div>
     </footer>
   </div>
 
