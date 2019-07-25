@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="rounded-circle" style="height: 70px;width: 70px;overflow: hidden;">
+{% if page.social.github %}
+{% avatar {{ page.social.github }} size=70 %}
+{% else %}
+<div style="height: 70px;width: 70px;background: aquamarine;display: block;text-align: center;box-sizing: border-box;padding: 20px;font-weight: 700">{{page.name | truncate: 1, ''}}</div>
+{% endif %}
+</div>
+
+<h1>{{ page.name }}</h1>
+<h2>{{ page.position }}</h2>
+
+<h4>Social:</h4>
+<ul>
+  {% if page.social.email %}<li>Email</li>{% endif %}
+  {% if page.social.github %}<li>GitHub</li>{% endif %}
+  {% if page.social.linkedin %}<li>LinkedIn</li>{% endif %}
+</ul>
+
+{{ content }}
+
+<h2>Posts</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

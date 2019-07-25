@@ -1,0 +1,87 @@
+# Name of your site (displayed in the header)
+name: Ajit Panigrahi
+
+# Short bio or description (displayed in the header)
+description: Fullstack Web Dev | @AjitZero
+
+# All links in one place
+social:
+  codechef: AjitZero
+  email: ajitzero@gmail.com
+  facebook:
+  github: AjitZero
+  hackerrank: AjitZero
+  instagram:
+  linkedin: in/AjitZero
+  medium: AjitZero
+  quora: Ajit-Panigrahi-5
+  stackoverflow: 8080186/AjitZero
+  youtube:
+
+# Enter the UA-* code or skip if not required
+# google_analytics:
+
+# Used for Sitemap.xml and your RSS feed
+url: https://ajit.me
+
+baseurl: ""
+
+# DON'T REMOVE ANYTHING FROM BELOW:
+
+collections:
+  authors:
+    output: true
+  category:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: author
+  - scope:
+      path: ""
+      type: "category"
+    values:
+      layout: category
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+permalink: /:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+sass:
+  style: :compressed
+
+paginate: 10
+paginate_path: /articles/:num/
+
+jekyll-mentions:
+  base_url: https://twitter.com
+
+plugins:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

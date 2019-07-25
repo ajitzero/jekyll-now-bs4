@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="blog list">
+  <h1>{{ page.name }}</h1>
+  <p class="lead">
+    {{ content | markdownify }}
+  </p>
+
+  <hr>
+  <h3>Articles for #{{ page.tag }}:</h3>
+  {% for post in site.categories[page.tag] %}
+    {% include post_preview.html %}
+  {% endfor %}
+</div>
