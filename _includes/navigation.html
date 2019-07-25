@@ -1,6 +1,26 @@
-<nav>
-  <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url contains item.link %}class="active"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-</nav>
+  <nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <a class="navbar-brand" href="#Intro">{{ site.name }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PrimaryMenu" aria-controls="menu" aria-expanded="false" aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Image Navbar -->
+    <!--
+      <a class="navbar-brand" href="#">
+        <img class="d-inline-block align-top" src="" alt="">
+      </a>
+    -->
+
+    <div id="PrimaryMenu" class="collapse navbar-collapse">
+      <ul role="menubar" class="navbar-nav ml-auto">
+        <li {% if page.url == "/" %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        {% for item in site.data.navigation %}
+        <li {% if page.url contains item.link %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
+          <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
