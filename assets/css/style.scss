@@ -97,7 +97,7 @@ article {
     margin-top: 6rem;
   }
 
-  & > p {
+  p {
     & > img {
       width: 100vw;
       padding: 0;
@@ -118,6 +118,10 @@ article {
       }
     }
   }
+  & > ol, & > ul {
+    padding-left: 0;
+  }
+
 
   table {
     border-collapse: collapse;
