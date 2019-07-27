@@ -21,19 +21,21 @@ In addition to the original features, this version includes some more features w
   > This one isn't a "necessary" addition but allows for much freedom in the long run.
   >
   > Or so I think 🙌
+- Supports Profile Pictures, which falls back to a placeholder avatar with the first letter of the first name.
 - Added plugins:
   - `jekyll-paginate`: Pagination.
   - `jekyll-mentions`: Support for mentions, defaulting to Twitter.
-  - `jekyll-avatar`: Support for GitHub Avatars.
-    - Supports using chosen images as well.
-    - … which falls back to GitHub Avatar...
-    - … which falls back to a placeholder avatar with the first letter of the first name.
+  - ~~`jekyll-avatar`: Support for GitHub Avatars.~~ **Removed** due to [this issue](https://github.com/benbalter/jekyll-avatar/issues/37).
 
 ------
+
+### Notes
 
 - **Removed** Disqus related code.
 
   > This part can be easily restored from [Jekyll Now](https://github.com/barryclark/jekyll-now). I don't ever use it though.
+
+- `/articles/index.html` is needed instead of a simpler `/articles.md` since `jekyll-paginate` requires an `index.html` file. No support for `*.md` 😔
 
 ## Meta
 

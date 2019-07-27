@@ -73,7 +73,6 @@ jekyll-mentions:
   base_url: https://twitter.com
 
 plugins:
-  - jekyll-avatar
   - jekyll-feed
   - jekyll-mentions
   - jekyll-paginate

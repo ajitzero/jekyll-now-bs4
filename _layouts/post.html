@@ -15,8 +15,6 @@ layout: default
         <div class="profile-pic rounded-circle" style="height: {{ author_pic_size }}px;width: {{ author_pic_size }}px;overflow: hidden;padding: 0;margin: 0;">
           {% if author.social.profile-pic %}
           <img class="img-fluid" src="{{ author.social.profile-pic }}" alt="{{ author.name }}">
-          {% elsif author.social.github %}
-          {% avatar {{ author.social.github }} size={{ author_pic_size }} %}
           {% else %}
           <div class="dummy-profile" style="height: {{ author_pic_size }}px; width: {{ author_pic_size }}px; padding: 18px;">{{author.name | truncate: 1, ''}}</div>
           {% endif %}
