@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Authors
 ---
 <h1>Authors</h1>

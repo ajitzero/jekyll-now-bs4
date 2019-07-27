@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Categories
 ---
 <h1>Categories</h1>
