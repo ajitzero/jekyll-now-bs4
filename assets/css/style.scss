@@ -52,14 +52,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $serif;
 }
 
-article {
-  img {
-    width: 100%;
-    padding: 0;
-    margin: 20px 0;
-  }
+.dummy-profile {
+  background: aquamarine;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  overflow: hidden;
 }
 
+// Top Navigation
 .navbar {
   &.active a {
     font-weight: 700;
@@ -76,6 +78,48 @@ article {
 
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+// Post
+article {
+  // Primary Title, use once only
+  h1 {
+    margin-top: 6rem;
+  }
+  & > img {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+  }
+}
+
+.article-meta {
+  display: flex;
+  @media screen and (max-width:767px) {
+    flex-direction: column;
+  }
+}
+.meta-group {
+  margin: 1rem 0;
+  padding: 0;
+  .meta-group-subtitle {
+    color: $gray;
+    font-size: 0.9rem;
+  }
+  .meta-group-main {
+    color: $darkGray;
+    font-size: 1.1rem;
+    & > a {
+      color: $darkGray;
+    }
+  }
+  @media screen and (min-width:767px) {
+    margin: 0;
+    padding: 0 1rem;
+    &:not(:last-child) {
+      border-right: 1px solid rgba($black, 0.1);
     }
   }
 }

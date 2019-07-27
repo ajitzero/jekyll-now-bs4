@@ -2,13 +2,14 @@
 layout: post
 title: With syntax highlighting
 author: Ajit
+updated: 2019-7-27 12:00:00 +0530
 og-image: assets/images/config.png
 categories:
   - web
 ---
 
 Check this one for an example on using OpenGraph images per post.
-
+ 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 {% highlight javascript %}
