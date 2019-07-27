@@ -200,5 +200,30 @@ article {
   }
 }
 
+.post {
+  box-shadow: 0 4px 10px -2px rgba($black, 0.2);
+  margin: 50px 0 50px -20px;
+  width: calc(100% + 40px);
+  border-top: 6px solid $accent;
+
+  .article-meta {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding: 1rem 20px;
+  }
+  & > h3, & > p {
+    padding: 0 20px;
+  }
+  & > a.badge {
+    margin-left: 20px;
+    margin-right: -20px;
+  }
+  & > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
 @import "highlights";
 @import "svg-icons";
