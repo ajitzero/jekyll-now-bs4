@@ -1,4 +1,7 @@
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<p class="lead">
+    {{ post.excerpt }}
+  </p>
 <div class="article-meta">
     {% assign author_pic_size = 50 %}
     {% assign author = site.authors | where: 'short_name', post.author | first %}
@@ -44,7 +47,3 @@
         </div>
       </div>
   </div>
-
-<div>
-  {{ post.excerpt }}
-</div>

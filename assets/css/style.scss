@@ -97,6 +97,22 @@ article {
     margin-top: 6rem;
   }
 
+  h2 {
+    margin-top: 2.5rem;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  h4 {
+    margin-top: 1.5rem;
+  }
+
+  h5, h6 {
+    margin-top: 1rem;
+  }
+
   p {
     & > img {
       width: 100vw;
@@ -121,7 +137,6 @@ article {
   & > ol, & > ul {
     padding-left: 0;
   }
-
 
   table {
     border-collapse: collapse;
@@ -167,11 +182,11 @@ article {
   padding: 0;
   .meta-group-subtitle {
     color: $gray;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   .meta-group-main {
     color: $darkGray;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     & > a {
       color: $darkGray;
     }
