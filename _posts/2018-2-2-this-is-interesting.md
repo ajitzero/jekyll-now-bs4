@@ -3,7 +3,7 @@ layout: post
 title: With syntax highlighting
 author: Ajit
 updated: 2019-7-27 12:00:00 +0530
-og-image: assets/images/config.png
+og-image: https://source.unsplash.com/mlEWD6uFCzI/1600x900
 categories:
   - web
 ---
@@ -22,4 +22,63 @@ const test2 = () => {
 };
 {% endhighlight %}
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+https://source.unsplash.com/mlEWD6uFCzI/1600x900
+
+# This is an <h1> tag
+## This is an <h2> tag
+### This is an <h3> tag
+#### This is an <h4> tag
+##### This is an <h5> tag
+###### This is an <h6> tag
+
+*This text will be italic*
+
+_This will also be italic_
+
+**This text will be bold**
+
+__This will also be bold__
+
+_You **can** combine them_
+
+~~This is for strike-through~~
+
+### Unordered
+
+- Item 1
+* Item 2
+  * Item 2a
+  + Item 2b
+
+### Ordered
+
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+
+### Image
+
+![Image from Unsplash](https://source.unsplash.com/mlEWD6uFCzI/1600x900)
+*Image credits: Unsplash*
+
+[Link to GitHub](http://github.com)
+
+> Blockquotes
+>
+> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus a atque corporis quisquam. Quidem, enim accusantium quas voluptates molestiae quaerat accusamus saepe possimus eum iste? Quo voluptatem minus neque?
+
+You can also use `inline code`.
+
+### Here's a table
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+First Header | Second Header | Third Header
+------------ | ------------- | -------------
+Content from cell 1 | Content from cell 2 | Content from cell 3
+Content in the first column | Content in the second column | Content in the third column
