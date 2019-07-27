@@ -1,5 +1,6 @@
 ---
 short_name: Aditya
+initials: AC
 name: Aditya Chattopadhyay
 position: Writer
 social:

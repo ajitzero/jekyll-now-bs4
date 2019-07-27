@@ -1,5 +1,6 @@
 ---
 short_name: Ajit
+initials: AZ
 name: Ajit Panigrahi
 position: Chief Editor
 social:

@@ -1,13 +1,13 @@
 ---
 layout: page
 ---
-{% assign author_pic_size = 70 %}
+{% assign author_pic_size = 50 %}
 
 <div class="rounded-circle" style="height: {{ author_pic_size }}px;width: {{ author_pic_size }}px;overflow: hidden;padding: 0;margin: 0;">
 {% if page.social.profile-pic %}
 <img class="img-fluid" src="{{ page.social.profile-pic }}" alt="{{ page.name }}">
 {% else %}
-<div class="dummy-profile" style="height: {{ author_pic_size }}px; width: {{ author_pic_size }}px; padding: 18px;">{{page.name | truncate: 1, ''}}</div>
+<div class="dummy-profile" style="height: {{ author_pic_size }}px; width: {{ author_pic_size }}px; padding: 12px;">{{ page.initials }}</div>
 {% endif %}
 </div>
 

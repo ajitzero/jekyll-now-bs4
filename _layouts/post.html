@@ -16,7 +16,7 @@ layout: default
           {% if author.social.profile-pic %}
           <img class="img-fluid" src="{{ author.social.profile-pic }}" alt="{{ author.name }}">
           {% else %}
-          <div class="dummy-profile" style="height: {{ author_pic_size }}px; width: {{ author_pic_size }}px; padding: 18px;">{{author.name | truncate: 1, ''}}</div>
+          <div class="dummy-profile" style="height: {{ author_pic_size }}px; width: {{ author_pic_size }}px; padding: 12px;">{{ author.initials }}</div>
           {% endif %}
         </div>
 
