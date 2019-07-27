@@ -7,8 +7,6 @@ layout: default
     <article>
       <h1>{{ page.title }}</h1>
 
-      <hr>
-
       <div class="article-meta">
         {% assign author_pic_size = 50 %}
         {% assign author = site.authors | where: 'short_name', page.author | first %}
@@ -25,7 +23,7 @@ layout: default
         </div>
 
         <!-- Written by -->
-        <div class="meta-group">
+        <div class="meta-group flex-grow-1">
           <div class="meta-group-subtitle">
             Author
           </div>
@@ -33,16 +31,6 @@ layout: default
             <a href="{{ author.url }}" rel="author">{{ author.name }}</a>
           </div>
         </div>
-
-        <!-- Published on -->
-        <div class="meta-group">
-            <div class="meta-group-subtitle">
-              Published
-            </div>
-            <div class="meta-group-main">
-              {{ page.date | date: "%b %e, %Y" }}
-            </div>
-          </div>
 
         <!-- Updated by -->
         {% if page.updated %}
@@ -55,9 +43,17 @@ layout: default
           </div>
         </div>
         {% endif %}
-      </div>
 
-      <hr>
+        <!-- Published on -->
+        <div class="meta-group">
+            <div class="meta-group-subtitle">
+              Published
+            </div>
+            <div class="meta-group-main">
+              {{ page.date | date: "%b %e, %Y" }}
+            </div>
+          </div>
+      </div>
 
       {{ content }}
 

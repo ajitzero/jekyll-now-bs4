@@ -153,8 +153,13 @@ article {
 
 .article-meta {
   display: flex;
+  border-top: 1px solid rgba($black, 0.1);
+  border-bottom: 1px solid rgba($black, 0.1);
+  padding: 1rem;
+  margin: 2rem 0;
   @media screen and (max-width:767px) {
     flex-direction: column;
+    padding: 1rem 0;
   }
 }
 .meta-group {
