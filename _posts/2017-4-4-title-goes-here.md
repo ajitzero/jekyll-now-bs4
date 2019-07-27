@@ -2,6 +2,7 @@
 layout: post
 title: You're up and running!
 author: Aditya
+og-image: config.png
 categories:
   - misc
 ---

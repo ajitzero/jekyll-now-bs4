@@ -3,7 +3,7 @@ layout: post
 title: With syntax highlighting
 author: Ajit
 updated: 2019-7-27 12:00:00 +0530
-og-image: https://source.unsplash.com/mlEWD6uFCzI/1600x900
+og-image-ext: https://source.unsplash.com/mlEWD6uFCzI/1600x900
 categories:
   - web
 ---

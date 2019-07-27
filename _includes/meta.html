@@ -15,7 +15,9 @@
   <meta property="twitter:title" content="{{ page.title }}" />
   {% endif %}
   {% if page.og-image %}
-  <meta property="og:image" content="{{ site.url }}/{{page.og-image}}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/{{page.og-image}}">
+  {% elsif page.og-image-ext %}
+  <meta property="og:image" content="{{page.og-image-ext}}">
   {% endif %}
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:type" content="website">
