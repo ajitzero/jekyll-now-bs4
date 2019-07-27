@@ -9,7 +9,7 @@ categories:
 ---
 
 Check this one for an example on using OpenGraph images per post.
- 
+
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
 {% highlight javascript %}
@@ -22,7 +22,10 @@ const test2 = () => {
 };
 {% endhighlight %}
 
+Directly placing the link like this doesn't work:
 https://source.unsplash.com/mlEWD6uFCzI/1600x900
+
+> `overflow-wrap: break-word` allows for this 👆link to break into the next line.
 
 # This is an <h1> tag
 ## This is an <h2> tag
