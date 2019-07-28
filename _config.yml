@@ -74,8 +74,10 @@ jekyll-mentions:
 
 plugins:
   - jekyll-feed
+  - jekyll-gist
   - jekyll-mentions
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-sitemap
 
 exclude:
