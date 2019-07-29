@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Authors
+clickbait: Our authors deserve their own space 😇
 ---
-<h1>Authors</h1>
 
 <ul>
   {% for author in site.authors %}

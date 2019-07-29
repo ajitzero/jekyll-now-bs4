@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Categories
+clickbait: All of our categories, in one place.
 ---
-<h1>Categories</h1>
 
 {% for category in site.categories %}
   <h4>{{ category[0] | upcase}}</h4>
