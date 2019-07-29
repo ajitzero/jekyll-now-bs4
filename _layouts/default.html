@@ -12,17 +12,17 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="wrapper container-fluid">
     <header>
       {% include navigation.html %}
     </header>
 
     {{ content }}
 
-    <footer class="bg-light text-dark p-5">
+    <footer class="bg-dark text-light py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 offset-md-2">
+          <div class="col-10 offset-1 col-md-8 offset-md-2">
             <h3 class="site-name">{{ site.name }}</h3>
             <p class="site-description">{{ site.description }}</p>
             {% include svg-icons.html %}
