@@ -13,36 +13,42 @@ In addition to the original features, this version includes some more features w
 - Uses [Bootstrap]([https://getbootstrap.com](https://getbootstrap.com/)) `4.3.1` layout.
 
 - Supports **categories** as a [collection](https://jekyllrb.com/docs/collections/):
-  - Each category gets a `/category/:name` page with meta-data
+  - Each category gets a `/category/:name` page with meta-data.
   - `/category` lists all categories, along with all articles under them so far.
   
 - Supports **authors** as a collection:
   - Each author gets a `/authors/:name` page with social links and bio.
   - `/authors` lists all authors. For now.
   
-- Includes `/_data`, currently used for navigation only.
+- Includes `/_data`, currently used for navigation links only.
   
   > This one isn't a "necessary" addition but allows for much freedom in the long run.
-  >
   > Or so I think 🙌
   
-- Supports Profile Pictures, which falls back to a placeholder avatar with the first letter of the first name.
+- Supports Profile Pictures, which falls back to a placeholder avatar with custom initials set in the author's markdown file.
 
-- Added plugins:
-  - `jekyll-paginate`: Pagination.
+- Plugins used:
+  - `jekyll-paginate`: Pagination as `/articles/:num/`
   - `jekyll-mentions`: Support for mentions, defaulting to Twitter.
   - `jekyll-redirect-from`: Support for redirecting pages. Must-have, really.
   - `jekyll-gist`: Supports for gists.
+  
+- Basic styling options with Sass variables:
+
+  - `primary-light` & `primary-dark`.
+  - `accent`: This is the only one I've used everywhere.
 
 ------
 
 ### Notes
 
+- This is by default meant for `<username>.github.io`, just like Jekyll Now was made.
+
 - **Removed** Disqus related code.
 
   > This part can be easily restored from [Jekyll Now](https://github.com/barryclark/jekyll-now). I don't ever use it though.
 
-- `jekyll-avatar` was added then **removed** later due to [this issue](https://github.com/benbalter/jekyll-avatar/issues/37).
+- `jekyll-avatar` was added, then **removed** later due to [this issue](https://github.com/benbalter/jekyll-avatar/issues/37).
 
 - `/articles/index.html` is needed instead of a simpler `/articles.md` since `jekyll-paginate` requires an `index.html` file. No support for `*.md` 😔
 

@@ -4,13 +4,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Image Navbar -->
-    <!--
-      <a class="navbar-brand" href="#">
-        <img class="d-inline-block align-top" src="" alt="">
-      </a>
-    -->
-
     <div id="PrimaryMenu" class="collapse navbar-collapse">
       <ul role="menubar" class="navbar-nav ml-auto">
         <li {% if page.url == "/" %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
@@ -21,6 +14,9 @@
           <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
         </li>
         {% endfor %}
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/AjitZero/jekyll-now-bs4">GitHub repo</a>
+        </li>
       </ul>
     </div>
   </nav>
