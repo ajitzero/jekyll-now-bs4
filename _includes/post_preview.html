@@ -1,9 +1,12 @@
 <div class="post">
   {% if post.og-image %}
-  <img src="/assets/images/{{post.og-image}}" alt="{{ post.title }}">
-  {% endif %}
-  {% if post.og-image-ext %}
-  <img src="{{post.og-image-ext}}" alt="{{ post.title }}">
+  <a href="{{ post.url }}">
+    <img src="/assets/images/{{post.og-image}}" alt="{{ post.title }}">
+  </a>
+  {% elsif post.og-image-ext %}
+  <a href="{{ post.url }}">
+    <img src="{{post.og-image-ext}}" alt="{{ post.title }}">
+  </a>
   {% endif %}
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p class="lead">
