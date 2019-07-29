@@ -10,20 +10,24 @@ clickbait: Check out the best from our community!
 {% endfor %}
 
 <!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+{% if paginator.total_pages > 1 %}
+<nav aria-label="Pagination">
+  <ul class="pagination justify-content-center">
+    {% if paginator.previous_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ paginator.previous_page_path }}">Previous</a>
+    </li>
+    {% endif %}
+    <li class="page-item disabled">
+      <span class="page-link">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+      </a>
+    </li>
+    {% if paginator.next_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ paginator.next_page_path }}">Next</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
+{% endif %}
