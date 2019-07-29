@@ -13,7 +13,7 @@ layout: default
           {% assign author = site.authors | where: 'short_name', page.author | first %}
 
           <!-- Profile Picture -->
-          <div class="profile-pic rounded-circle" style="height: {{ author_pic_size }}px;width: {{ author_pic_size }}px;overflow: hidden;padding: 0;margin: 0;">
+          <div class="profile-pic rounded-circle" style="height: {{ author_pic_size }}px;width: {{ author_pic_size }}px;overflow: hidden;padding: 0;">
             {% if author.social.profile-pic %}
             <img class="img-fluid" src="{{ author.social.profile-pic }}" alt="{{ author.name }}">
             {% else %}
@@ -22,7 +22,7 @@ layout: default
           </div>
 
           <!-- Written by -->
-          <div class="meta-group flex-grow-1">
+          <div class="meta-group author-name">
             <div class="meta-group-subtitle">
               Author
             </div>
@@ -31,20 +31,21 @@ layout: default
             </div>
           </div>
 
-          <!-- Updated by -->
-          {% if page.updated %}
-          <div class="meta-group">
-            <div class="meta-group-subtitle">
-              Updated
+          <div class="meta-groups">
+            <!-- Updated by -->
+            {% if page.updated %}
+            <div class="meta-group">
+              <div class="meta-group-subtitle">
+                Updated
+              </div>
+              <div class="meta-group-main">
+                {{ page.updated | date: "%b %e, %Y" }}
+              </div>
             </div>
-            <div class="meta-group-main">
-              {{ page.updated | date: "%b %e, %Y" }}
-            </div>
-          </div>
-          {% endif %}
+            {% endif %}
 
-          <!-- Published on -->
-          <div class="meta-group">
+            <!-- Published on -->
+            <div class="meta-group">
               <div class="meta-group-subtitle">
                 Published
               </div>
@@ -52,6 +53,7 @@ layout: default
                 {{ page.date | date: "%b %e, %Y" }}
               </div>
             </div>
+          </div>
         </div>
 
         {{ content }}
