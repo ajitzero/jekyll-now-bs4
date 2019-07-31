@@ -8,7 +8,7 @@ clickbait: All of our categories, in one place.
   <h4>{{ category[0] | upcase}}</h4>
   <ul>
     {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 {% endfor %}

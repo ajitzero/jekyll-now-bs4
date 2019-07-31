@@ -7,11 +7,11 @@
     <div id="PrimaryMenu" class="collapse navbar-collapse">
       <ul role="menubar" class="navbar-nav ml-auto">
         <li {% if page.url == "/" %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="{{ site.baseurl }}">Home</a>
         </li>
         {% for item in site.data.navigation %}
         <li {% if page.url contains item.link %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
-          <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+          <a class="nav-link" href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
         </li>
         {% endfor %}
         <li class="nav-item">

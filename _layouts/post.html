@@ -27,7 +27,7 @@ layout: default
               Author
             </div>
             <div class="meta-group-main">
-              <a href="{{ author.url }}" rel="author">{{ author.name }}</a>
+              <a href="{{ site.baseurl }}{{ author.url }}" rel="author">{{ author.name }}</a>
             </div>
           </div>
 
@@ -64,7 +64,7 @@ layout: default
 
       Categories:
       {% for category in page.categories %}
-      <a href="/category/{{ category }}">#{{ category }}</a>
+      <a href="{{ site.baseurl }}/category/{{ category }}">#{{ category }}</a>
       {% endfor %}
 
     </div>
