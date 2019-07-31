@@ -129,6 +129,19 @@ article {
     margin-top: 1rem;
   }
 
+  & > ul {
+    list-style-type: none;
+    & > li::before {
+      content: "•";
+      font-size: 1.4rem;
+      color: $accent;
+      padding-right: 18px;
+      margin-left: -18px;
+      margin-top: -4px;
+      position: absolute;
+    }
+  }
+
   p {
     & > img {
       width: 100vw;
