@@ -21,8 +21,12 @@ social:
 
 # Used for Sitemap.xml and your RSS feed
 url: https://ajit.me
+# Add complete URL if setting up as Project website of the form <user/org>.github.io/<repo>/
 
+# Leave baseurl empty when setting up repo for <user/org account>.github.io
 baseurl: ""
+# Use name preceding with "/" for <user/org>.github.io/<repo>/
+# baseurl: "/blog"
 
 # DON'T REMOVE ANYTHING FROM BELOW:
 

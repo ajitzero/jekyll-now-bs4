@@ -42,7 +42,11 @@ In addition to the original features, this version includes some more features w
 
 ### Notes
 
-- This is by default meant for `<username>.github.io`, just like Jekyll Now was made.
+- This is by default meant for *user* or *organisation* websites, like `<username/org-name>.github.io`, just like Jekyll Now was made.
+
+- For *project* websites, update `baseurl` in `_config.yml` as the repository name.
+
+  **e.g.** If the name of the repository is assumed to be `repo` then the `baseurl` should be set as `/repo`, while the website can be viewed on `<username/org-name>.github.io/repo/`.
 
 - **Removed** Disqus related code.
 
