@@ -34,15 +34,21 @@ In addition to the original features, this version includes some more features w
   - `jekyll-gist`: Supports for gists.
   
 - Basic styling options with Sass variables:
-
   - `primary-light` & `primary-dark`.
   - `accent`: This is the only one I've used everywhere.
+  
+- Layout options:
+  - [`default`](https://github.com/AjitZero/jekyll-now-bs4/blob/master/_layouts/default.html): Includes the navigation and footer.
+  - [`jumbo-section`](https://github.com/AjitZero/jekyll-now-bs4/blob/master/_layouts/jumbo-section.html): Adds a hero navigation jumbotron component from bootstrap.
+  - [`none`](https://github.com/AjitZero/jekyll-now-bs4/blob/master/_layouts/none.html): For truly independent pages.
+  - [`page`](https://github.com/AjitZero/jekyll-now-bs4/blob/master/_layouts/page.html): Standard go-to page template.
+  - [`standalone`](https://github.com/AjitZero/jekyll-now-bs4/blob/master/_layouts/standalone.html): Includes default setup with `<main>`.
 
 ------
 
 ### Notes
 
-- This is by default meant for *user* or *organisation* websites, like `<username/org-name>.github.io`, just like Jekyll Now was made.
+- This is by default no longer meant for *user* or *organisation* websites, like `<username/org-name>.github.io`, unlike how Jekyll Now was made. However, it can be easily be made to do support that.
 
 - For *project* websites, update `baseurl` in `_config.yml` as the repository name.
 
@@ -56,10 +62,14 @@ In addition to the original features, this version includes some more features w
 
 - `/articles/index.html` is needed instead of a simpler `/articles.md` since `jekyll-paginate` requires an `index.html` file. No support for `*.md` 😔
 
+## Contributing
+
+As a template, I'm adding only those features which I deem necessary. For any features you may need, [raise an issue](https://github.com/AjitZero/jekyll-now-bs4/issues/new) and let's discuss!
+
 ## Meta
 
 [![GitHub followers](https://img.shields.io/github/followers/AjitZero.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/AjitZero?tab=followers)
 
-Ajit Panigrahi – [@AjitZero](https://github.com/AjitZero) – Ping me on [Twitter](https://twitter.com/AjitZero) for any urgent queries, raise an issue for anything else.
+Ajit Panigrahi – [@AjitZero](https://github.com/AjitZero) – Ping me on [Twitter](https://twitter.com/AjitZero) for any urgent queries, [raise an issue](https://github.com/AjitZero/jekyll-now-bs4/issues/new) for anything else.
 
 Distributed under the [MIT License](https://opensource.org/licenses/MIT). See [`LICENSE`](https://github.com/AjitZero/jekyll-now-bs4/blob/master/LICENSE) for more information.
