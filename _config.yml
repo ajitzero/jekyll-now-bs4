@@ -7,14 +7,8 @@ description: Jekyll Now, with more. By @AjitZero
 # All links in one place
 social:
   email: ajitzero@gmail.com
-  facebook:
   github: AjitZero
-  instagram:
   linkedin: in/AjitZero
-  medium: AjitZero
-  quora: Ajit-Panigrahi-5
-  stackoverflow: 8080186/AjitZero
-  youtube:
 
 # Enter the UA-* code or skip if not required
 # google_analytics:
@@ -68,7 +62,7 @@ kramdown:
 sass:
   style: :compressed
 
-paginate: 10
+paginate: 7
 paginate_path: /articles/:num/
 
 jekyll-mentions:
@@ -87,4 +81,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
   - CNAME
