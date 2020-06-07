@@ -8,6 +8,8 @@
 
 In addition to the original features, this version includes some more features which I needed in multiple projects. Bootstrap is just handy.
 
+**Demo Link:** https://ajitzero.github.io/jekyll-now-bs4/
+
 ## Features
 
 - Uses [Bootstrap]([https://getbootstrap.com](https://getbootstrap.com/)) `4.3.1` layout.
@@ -15,16 +17,16 @@ In addition to the original features, this version includes some more features w
 - Supports **categories** as a [collection](https://jekyllrb.com/docs/collections/):
   - Each category gets a `/category/:name` page with meta-data.
   - `/category` lists all categories, along with all articles under them so far.
-  
+
 - Supports **authors** as a collection:
   - Each author gets a `/authors/:name` page with social links and bio.
   - `/authors` lists all authors. For now.
-  
+
 - Includes `/_data`, currently used for navigation links only.
-  
+
   > This one isn't a "necessary" addition but allows for much freedom in the long run.
   > Or so I think 🙌
-  
+
 - Supports Profile Pictures, which falls back to a placeholder avatar with custom initials set in the author's markdown file.
 
 - Plugins used:
@@ -32,11 +34,11 @@ In addition to the original features, this version includes some more features w
   - `jekyll-mentions`: Support for mentions, defaulting to Twitter.
   - `jekyll-redirect-from`: Support for redirecting pages. Must-have, really.
   - `jekyll-gist`: Supports for gists.
-  
+
 - Basic styling options with Sass variables:
   - `primary-light` & `primary-dark`.
   - `accent`: This is the only one I've used everywhere.
-  
+
 - Layout options:
   - [`default`](https://github.com/AjitZero/jekyll-now-bs4/blob/master/_layouts/default.html): Includes the navigation and footer.
   - [`jumbo-section`](https://github.com/AjitZero/jekyll-now-bs4/blob/master/_layouts/jumbo-section.html): Adds a hero navigation jumbotron component from bootstrap.
