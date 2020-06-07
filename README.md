@@ -12,7 +12,7 @@ In addition to the original features, this version includes some more features w
 
 ## Features
 
-- Uses [Bootstrap]([https://getbootstrap.com](https://getbootstrap.com/)) `4.3.1` layout.
+- Uses [Bootstrap](https://getbootstrap.com) `4.5.0` layout.
 
 - Supports **categories** as a [collection](https://jekyllrb.com/docs/collections/):
   - Each category gets a `/category/:name` page with meta-data.
