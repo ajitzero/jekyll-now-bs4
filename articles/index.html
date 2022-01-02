@@ -40,8 +40,8 @@ clickbait: Check out the best from our community!
       <ul class="list-unstyled">
       {% for category in site.categories %}
         <li>
-          <a href="/category/{{ category[0] }}">
-            #{{ category[0] | downcase}}
+          <a href="{{ site.baseurl }}/category/{{ category[0] }}">
+            #{{ category[0] | downcase }}
           </a>
         </li>
       {% endfor %}
